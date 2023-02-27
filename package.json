@@ -10,7 +10,7 @@
     "start": "cd server && npm start",
     "start:prod": "cd server && npm start",
     "start:dev": "echo \"starting prod\" && concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
-    "install": "npm install && cd server && npm i && cd ../client && npm i",
+    "install": "cd server && npm i && cd ../client && npm i",
     "heroku-postbuild": "cd client && npm run build"
   },
   "keywords": [],
